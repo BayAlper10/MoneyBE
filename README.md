@@ -8,7 +8,7 @@ PocketMine-MP Economy Plugin
 /editmoney
 
 # API
-COMING SOON
+MoneyBE::getInstance()->myMoney($player);
 
 # Extra
 MySQL Settings (COMING SOON)
