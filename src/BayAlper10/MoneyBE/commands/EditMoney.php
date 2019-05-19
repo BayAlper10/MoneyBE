@@ -39,7 +39,7 @@ class EditMoney extends Command implements PluginIdentifiableCommand{
 				if($target instanceof Player){
 					$miktar = (int)$args[1];
 					if($miktar >= 0){
-						Economy::EditMoney($sender, $target, $miktar);
+						Main::EditMoney($sender, $target, $miktar);
 					}else{
 						$sender->sendMessage("§cNegatif rakam giremezsiniz!");
 					}

@@ -36,7 +36,7 @@ class SeeMoney extends Command implements PluginIdentifiableCommand{
 			}else{
 				$target = $sender->getServer()->getPlayer($args[0]);
 				if($target instanceof Player){
-					Economy::SeeMoney($sender, $target);
+					Main::SeeMoney($sender, $target);
 				}else{
 					$sender->sendMessage("§8» §cBelirtilen oyuncu bulunamadı!");
 				}

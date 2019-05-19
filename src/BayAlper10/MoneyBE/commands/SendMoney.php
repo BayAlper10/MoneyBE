@@ -40,7 +40,7 @@ class SendMoney extends Command implements PluginIdentifiableCommand{
 					if(is_numeric($miktar)){
 						if($miktar != 0){
 							if($miktar > 0){
-								Economy::SendMoney($sender, $target, $miktar);
+								Main::SendMoney($sender, $target, $miktar);
 							}else{
 								$sender->sendMessage("§cNegatif rakam giremezsiniz!");
 							}

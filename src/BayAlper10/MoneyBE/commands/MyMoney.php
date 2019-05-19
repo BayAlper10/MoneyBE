@@ -31,7 +31,7 @@ class MyMoney extends Command implements PluginIdentifiableCommand{
 				$sender->sendMessage('§cBu komut, konsoldan kullanılamaz');
 				return true;
 			}
-			Economy::MyMoney($sender);
+			Main::MyMoney($sender);
 			return true;
 		}
 	}
